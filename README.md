@@ -9,6 +9,7 @@ Acting as both a client and a server.
 Running commands remotely.
 Uploading and receiving files.
 Providing an interactive shell.
+
 📂 Files:
 
 netcat_clone.py - The main Netcat clone script.
@@ -19,6 +20,7 @@ A simple TCP client-server implementation that demonstrates:
 Establishing a TCP connection.
 Sending and receiving data over a network.
 Handling multiple connections.
+
 📂 Files:
 
 tcp_client.py - A TCP client that connects to a server.
@@ -29,9 +31,11 @@ A lightweight UDP client demonstrating:
 
 Sending and receiving UDP packets.
 Connectionless communication.
+
 📂 Files:
 
 udp_client.py - A UDP client for testing packet transmission.
+
 🛠️ Setup & Usage
 📌 Prerequisites
 Python 3.x
