@@ -37,17 +37,21 @@ Basic understanding of networking and sockets.
 
 🔧 Installation
 Clone this repository:
-  git clone https://github.com/yourusername/bhp.git
+
+  git clone https://github.com/24-KARANI/bhp.git
   cd bhp
 
 Run the scripts using Python:
+
   python netcat_clone.py -h
 
 📜 Example Usage
 To start a listener on port 5555:
+ 
   python netcat_clone.py -t 0.0.0.0 -p 5555 -l -c
 
 To connect to the listener:
+  
   python netcat_clone.py -t 127.0.0.1 -p 5555
 
 🔍 Future Additions
