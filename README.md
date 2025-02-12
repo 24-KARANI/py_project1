@@ -1,5 +1,4 @@
-BHP - Black Hat Python Projects
-Welcome to the BHP repository, where I explore and implement various network security and programming concepts using Python. This repository serves as a collection of projects inspired by Black Hat Python, including network tools, client-server implementations, and security utilities.
+Security project 1
 
 🚀 Projects in This Repository
 1. 🖥️ Netcat Clone (Part 1)
