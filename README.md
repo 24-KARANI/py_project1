@@ -1,67 +1,41 @@
-🖥️ Netcat Clone (Part 1)
-A Python implementation of Netcat, capable of:
+Netcat Clone
 
-Acting as both a client and a server.
-Running commands remotely.
-Uploading and receiving files.
-Providing an interactive shell.
+Overview:
 
-📂 Files:
+This is a custom netcat clone built in Python as part of my resume projects. 
+It replicates core netcat functionality by allowing you to connect to remote hosts or listen for incoming connections. 
+In listener mode, it can spawn an interactive command shell for remote administration.
 
-netcat_clone.py - The main Netcat clone script.
+Features:
 
-2. 🔗 TCP Client and Server
-A simple TCP client-server implementation that demonstrates:
+• Supports both client and server modes. 
+• Listener mode (-l) to accept incoming connections. 
+• Option to spawn an interactive command shell (-c) when running as a listener. 
+• Interactive, real-time communication between client and server.
 
-Establishing a TCP connection.
-Sending and receiving data over a network.
-Handling multiple connections.
+Prerequisites:
 
-📂 Files:
+• Python 3.x
+Files Included:
 
-tcp_client.py - A TCP client that connects to a server.
-tcp_server.py - A multi-client TCP server.
+    clone_netcat.py - The netcat clone script.
 
-3. 📡 UDP Client
-A lightweight UDP client demonstrating:
+Usage Instructions:
 
-Sending and receiving UDP packets.
-Connectionless communication.
+    Listener (Server) Mode: In one terminal, start the netcat clone in listener mode with a command shell by running:
 
-📂 Files:
+python3 clone_netcat.py -t 192.168.1.101 -p 5555 -l -c
 
-udp_client.py - A UDP client for testing packet transmission.
+This command sets the target IP to 192.168.1.101 and the port to 5555. 
+The flags -l and -c tell the script to listen for incoming connections and spawn a command shell upon connection.
 
-🛠️ Setup & Usage
-📌 Prerequisites
-Python 3.x
-Basic understanding of networking and sockets.
+Client Mode: In another terminal, connect to the listener using the netcat clone in client mode by running:
 
-🔧 Installation
-Clone this repository:
+    python3 clone_netcat.py -t 192.168.1.101 -p 5555
 
-  git clone https://github.com/24-KARANI/bhp.git
-  cd bhp
+    Replace the IP address and port with the appropriate values for your environment.
 
-Run the scripts using Python:
+Additional Notes:
 
-  python netcat_clone.py -h
-
-📜 Example Usage
-To start a listener on port 5555:
- 
-  python netcat_clone.py -t 0.0.0.0 -p 5555 -l -c
-
-To connect to the listener:
-  
-  python netcat_clone.py -t 127.0.0.1 -p 5555
-
-🔍 Future Additions
-I plan to add:
-
-More advanced networking tools.
-Security-focused Python scripts.
-Automation tools.
-
-📜 License
-This project is for educational purposes only. Use responsibly.
+• This tool is intended for educational purposes and should only be used in environments where you have explicit permission. 
+• Feel free to modify the script to add functionality or customize it for your specific needs.
