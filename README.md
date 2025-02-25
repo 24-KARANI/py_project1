@@ -1,7 +1,6 @@
 Security project 1
 
-🚀 Projects in This Repository
-1. 🖥️ Netcat Clone (Part 1)
+🖥️ Netcat Clone (Part 1)
 A Python implementation of Netcat, capable of:
 
 Acting as both a client and a server.
