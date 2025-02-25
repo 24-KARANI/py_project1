@@ -1,5 +1,3 @@
-Security project 1
-
 🖥️ Netcat Clone (Part 1)
 A Python implementation of Netcat, capable of:
 
